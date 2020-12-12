@@ -11,7 +11,6 @@ const string CPlayState::s_StateID = "PLAYSTATE";
 
 bool CPlayState::onEnter()
 {
-	cout << "enter CPlayState123\n";
 	cout << "enter CPlayState\n";
 	//���￪ʼд����
 
