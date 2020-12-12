@@ -1,4 +1,4 @@
-#include "CFileManage.h"
+ï»¿#include "CFileManage.h"
 #include "CPlayState.h"
 #include "CTextureManager.h"
 #include "CAudioManage.h"
@@ -12,7 +12,8 @@ const string CPlayState::s_StateID = "PLAYSTATE";
 bool CPlayState::onEnter()
 {
 	cout << "enter CPlayState123\n";
-	//ÕâÀï¿ªÊ¼Ð´´úÂë
+	cout << "enter CPlayState\n";
+	//ï¿½ï¿½ï¿½ï¿ªÊ¼Ð´ï¿½ï¿½ï¿½ï¿½
 
 	return true;
 }
@@ -20,7 +21,7 @@ bool CPlayState::onEnter()
 void CPlayState::inputHandle()
 {
 	CInputHandle::Instance()->update();
-	//ÕâÀï¿ªÊ¼Ð´´úÂë
+	//ï¿½ï¿½ï¿½ï¿ªÊ¼Ð´ï¿½ï¿½ï¿½ï¿½
 
 }
 
@@ -31,7 +32,7 @@ void CPlayState::update()
 void CPlayState::render()
 {
 	SDL_RenderClear(CGame::Instance()->getRenderer());
-	//ÕâÀï¿ªÊ¼Ð´´úÂë
+	//ï¿½ï¿½ï¿½ï¿ªÊ¼Ð´ï¿½ï¿½ï¿½ï¿½
 
 	SDL_RenderPresent(CGame::Instance()->getRenderer());
 }
@@ -39,7 +40,7 @@ void CPlayState::render()
 bool CPlayState::onExit()
 {
 	cout << "exit CPlayState\n";
-	//ÕâÀï¿ªÊ¼Ð´´úÂë
+	//ï¿½ï¿½ï¿½ï¿ªÊ¼Ð´ï¿½ï¿½ï¿½ï¿½
 
 	return true;
 }
