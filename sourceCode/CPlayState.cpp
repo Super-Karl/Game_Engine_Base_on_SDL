@@ -12,7 +12,7 @@ const string CPlayState::s_StateID = "PLAYSTATE";
 bool CPlayState::onEnter()
 {
 	cout << "enter CPlayState\n";
-	//���￪ʼд����
+	//这里开始写代码
 
 	return true;
 }
@@ -20,7 +20,7 @@ bool CPlayState::onEnter()
 void CPlayState::inputHandle()
 {
 	CInputHandle::Instance()->update();
-	//���￪ʼд����
+	//这里开始写代码
 
 }
 
@@ -31,7 +31,7 @@ void CPlayState::update()
 void CPlayState::render()
 {
 	SDL_RenderClear(CGame::Instance()->getRenderer());
-	//���￪ʼд����
+	//这里开始写代码
 
 	SDL_RenderPresent(CGame::Instance()->getRenderer());
 }
@@ -39,7 +39,7 @@ void CPlayState::render()
 bool CPlayState::onExit()
 {
 	cout << "exit CPlayState\n";
-	//���￪ʼд����
+	//这里开始写代码
 
 	return true;
 }
